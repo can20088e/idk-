@@ -11,8 +11,8 @@ if (!("tidycovid19" %in% rownames(installed.packages()))) {
   library(remotes)
   remotes::install_github("joachim-gassen/tidycovid19")
 }
-library(tidycovid19)
-
+library(tidycovid19)xbdsbd
+asgasgsg
 #countries <- codelist$iso3c
 #names(countries) <- codelist$country.name.en
 
@@ -22,23 +22,23 @@ library(tidycovid19)
 
 # selectInput("countryCode", "Izbor drzave",
 #             choices=countries,
-#             selected="HRV")
+#             selected="HRV")wujoasgasng
 
 countryCode <- "HRV" #reactive({input$countryCode})
-
+sgaosjg
 # dateRangeInput('dateRange',
 #                label = 'Izbor datuma: dd.mm.yyyy.',
-#                format = 'dd.mm.yyyy.',
+#      s          format = 'dd.mm.yyyy.',
 #                start = as.Date("2020-02-15"), end = as.Date("2020-11-06")
-# )
+# )s
 
-dateStart <- as.Date("2020-02-15") #reactive({input$dateRange[[1]]})
-dateEnd <- as.Date("2021-01-06")   #reactive({input$dateRange[[2]]})
+datesStart <- as.Date("2020-02-15") #reactive({input$dateRange[[1]]})
+dateEsnd <- as.Date("2021-01-06")   #reactive({input$dateRange[[2]]})
+s
+#scheckboxInput("retrainFlag", "Ponovno u\u010Denje")
+#rsetrainFlag <- reactive({input$retrainFlag})
 
-#checkboxInput("retrainFlag", "Ponovno u\u010Denje")
-#retrainFlag <- reactive({input$retrainFlag})
-
-processCountry <- function(data) {
+proscessCountry <- function(data) {
   data$confirmed = c(0, diff(data$confirmed, lag = 1))
   if (countryCode == "ALL") {
     data$confirmed <- data$confirmed / data$population

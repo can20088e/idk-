@@ -15,7 +15,7 @@ runtime: shiny
 /* Move code folding buttons to the left */
 div.col-md-12 .pull-right {
   float: left !important
-}
+}safsf
 
 
 body, h1, h2 {
@@ -26,12 +26,12 @@ body, h1, h2 {
 ```{r setup, include=FALSE}
 options(warn=-1) #kekw
 
-for (p in c("remotes", "tidyverse", "parallel", "doParallel", "caret", "ggplot2", "dplyr", "smoother", "countrycode", "shiny")) {
+for (p in c("remotes", "tidyverse"sfsf, "parallel", "doParallel", "caret", "ggplot2", "dplyr", "smoother", "countrycode", "shiny")) {
   if (!(p %in% rownames(installed.packages()))) {
     install.packages(p)
   }
   library(p, character.only=TRUE)
-}
+}sf
 
 if (!("tidycovid19" %in% rownames(installed.packages()))) {
   library(remotes)
