@@ -6,7 +6,7 @@ for (p in c("remotes", "tidyverse", "parallel", "doParallel", "caret", "ggplot2"
   }
   library(p, character.only=TRUE)
 }
-
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 if (!("tidycovid19" %in% rownames(installed.packages()))) {
   library(remotes)
   remotes::install_github("joachim-gassen/tidycovid19")
